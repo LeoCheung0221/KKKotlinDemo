@@ -1,0 +1,30 @@
+package com.tufusi.kkkotlin.design_patterns.CreativeType.creator.demo;
+
+/**
+ * Created by LeoCheung on 2021/1/19.
+ *
+ * @description
+ */
+public class T410 extends Computer {
+
+    private String graphicCard; //显卡
+
+    public T410() {
+        this.setType("ThinkPad T410");
+    }
+
+    public String getGraphicCard() {
+        return graphicCard;
+    }
+
+    public void setGraphicCard(String graphicCard) {
+        this.graphicCard = graphicCard;
+    }
+
+    @Override
+    public String toString() {
+        return "型号：\t" + this.getType() + "\nCPU：\t" + this.getCpu() +
+                "\n内存：\t" + this.getRam() + "\n硬盘：\t" + this.getHardDisk() +
+                "\n显示器：\t" + this.getMonitor() + "\n操作系统：\t" + this.getOs() + "\n显卡：" + this.getGraphicCard();
+    }
+}
