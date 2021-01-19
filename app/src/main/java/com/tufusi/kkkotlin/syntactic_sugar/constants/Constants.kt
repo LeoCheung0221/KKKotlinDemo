@@ -6,6 +6,8 @@ package com.tufusi.kkkotlin.syntactic_sugar.constants
  */
 class Constants {
 
+
+
     class Calendar {
         companion object {
             val months = 12
