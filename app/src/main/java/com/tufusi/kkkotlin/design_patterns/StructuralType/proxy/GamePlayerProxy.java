@@ -11,6 +11,13 @@ public class GamePlayerProxy implements IGamePlayer {
 
     private IGamePlayer player;
 
+    /**
+     * 持有公共接口的引用，这也是代理类关联之处，但也是代理类的局限
+     * 可以通过JDK内置的代理类进行类反射实现
+     * 也可以通过cglib实现任意类的代理实现
+     *
+     * @param player 代理接口引用
+     */
     public GamePlayerProxy(IGamePlayer player) {
         this.player = player;
     }
