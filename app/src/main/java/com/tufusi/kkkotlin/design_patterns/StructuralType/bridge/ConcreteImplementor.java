@@ -11,5 +11,6 @@ public class ConcreteImplementor implements Implementor {
     @Override
     public void operationImp() {
         // 业务处理代码
+        System.out.println("实现化角色的业务代码");
     }
 }
